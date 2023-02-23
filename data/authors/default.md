@@ -1,16 +1,14 @@
 ---
-name: Tails Azimuth
+name: Stifnes Samuel
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Front End Engineer
+company: TU Dublin
+email: samuelstifnes@gmail.com
+twitter: https://twitter.com/stifnes
+linkedin: https://www.linkedin.com/in/stifnes-samuel-357300102/
+github: https://github.com/stifnes
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+With a daunting shift from mechanical engineering to web development, I initiated my career as an entry-level Front End Developer in early 2017. I have worked on numerous projects, including different tech stacks from that point on.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a self taught developer with 4+ years of experience in creating and delivering user-centric application and solutions, I have been acknowledged as a solution-focused professional with the ability to design and develop innovative applications.
