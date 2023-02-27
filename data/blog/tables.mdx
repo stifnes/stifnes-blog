@@ -1,0 +1,139 @@
+---
+title: 'Lab3 - Using colspan and rowspan in tables'
+date: '2023-02-25'
+lastmod: '2023-02-25'
+tags: ['HTML']
+draft: false
+summary: 'Using colspan and rowspan in tables'
+images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
+authors: ['default']
+---
+
+The following blog will tell how to use colspan and rowspan in tables. Also some positive and negative aspects of using tables
+
+To understand colspan in tables. Start by creating a simple table with two rows and 5 cells like this:
+
+```
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+     <tr>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+Then add some styles to visualize each cell:
+
+```
+table {
+  border: 1px solid;
+  width: 200px;
+  height: 150px;
+  text-align:center
+}
+
+td {
+  border: 1px solid red
+}
+```
+
+Run your HTML in the browser and it must look something like this:
+
+![Table colspan](/static/images/colspan.png)
+
+Now to make the last cell span over two columns so that it takes the empty space on the right, add an attribute of `colspan="2"` on the last `td` element:
+
+```
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+     <tr>
+      <td>4</td>
+      <td colspan="2">5</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+And now you should see your last cells spanned over 2 columns and occupies the empty space on the right. Like this:
+
+![Table colspan final](/static/images/colspan-2.png)
+
+And thats how colspan works.
+
+Now lets look at row span. A key point to remember here is that `colspan` spans a cell in horizontal axes and `rowspan` spans the cell in vertical axes. Lets take a look:
+
+Take the same table from above and add another cell to the second row and also add another row with two cells after it
+
+```
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+     <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+     <tr>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+![Table rowspan](/static/images/rowspan.png)
+
+Now add an attribute of `rowspan="2"` to the sixt cell to span it down over the empty space.
+
+```
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+     <tr>
+      <td>4</td>
+      <td>5</td>
+      <td rowspan="2">6</td>
+    </tr>
+     <tr>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+And now you can see the 6th cell spanned in vertical direction over two rows
+
+![Table rowspan final](/static/images/rowspan-2.png)
+
+Some positives and negatives about `tables` in HTML.
+
+## Positives:
+
+- Tables are a great tool for displaying large number of tabular data such as spreadsheets and finances in admin panels and stock exchange websites.
+
+## Negatives:
+
+- Coding Tables can be tricky, especially if you are dealing with nested tables
+- Tables are not responsive. It is very hard to transform a table for mobile screen size
+- Although it is easier to make elements centralized in table cells. Making entire layouts using tables can be complex. It is easier to make layouts using flexbox and CSS Grids

@@ -2,46 +2,59 @@
 title: 'Lab1 - Analysing the UI'
 date: '2023-02-23'
 lastmod: '2023-02-23'
-tags: ['design']
+tags: ['Design']
 draft: false
 summary: 'Two major differences between Wireframing and Prototyping'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
 
-The following blog will contain the analysis of the following three website.
+The following blog will contain the analysis of UI of the following three website.
 
-https://www.tudublin.ie
-https://www.w3schools.com/
+https://www.tudublin.ie \
+https://www.w3schools.com/ \
 https://www.khanacademy.org/
 
 By using these two tools:
 
-https://ready.mobi/
+https://ready.mobi/ \
 http://wave.webaim.org/
 
 These two tools will help in deciding the mobile responsiveness and web accessibility of the websites under analysis.
 
-Mobile responsiveness of [TU DUBlin](https://www.tudublin.ie)
+Mobile responsiveness report of [TU DUBlin](https://www.tudublin.ie)
 
 ![tudublin-mobi-ready](/static/images/blog1/tudublin-mobiready.png)
 
-Web accessibility of [TU DUBlin](https://www.tudublin.ie)
-
-![tudublin-mobi-ready](/static/images/blog1/tudublin-accessibility.png)
-
-Mobile responsiveness of [W3 Schools](https://www.w3schools.com/)
+Mobile responsiveness report of [W3 Schools](https://www.w3schools.com/)
 
 ![tudublin-mobi-ready](/static/images/blog1/w3schools-mobiready.png)
 
-Web accessibility of [W3 Schools](https://www.w3schools.com/)
-
-![tudublin-mobi-ready](/static/images/blog1/w3schools-accessibility.png)
-
-Mobile responsiveness of [Khan Academy](https://www.khanacademy.org/)
+Mobile responsiveness report of [Khan Academy](https://www.khanacademy.org/)
 
 ![tudublin-mobi-ready](/static/images/blog1/khanacademy-mobiready.png)
 
-Web accessibility of [Khan Academy](https://www.khanacademy.org/)
+- All of the three websites passed the mobile responsivenes checks but showed a slow response time due to high number of page weight. Due to large amount of content available on these websites the bytes download is size is high which will effect the user experience. And that is the main problem with all three websites.
+
+Web accessibility report of [TU DUBlin](https://www.tudublin.ie)
+
+![tudublin-mobi-ready](/static/images/blog1/tudublin-accessibility.png)
+
+Web accessibility report of [W3 Schools](https://www.w3schools.com/)
+
+![tudublin-mobi-ready](/static/images/blog1/w3schools-accessibility.png)
+
+Web accessibility report of [Khan Academy](https://www.khanacademy.org/)
 
 ![tudublin-mobi-ready](/static/images/blog1/khanacademy-accessibility.png)
+
+- All three websites have a lot of contrast errors in them, which means that the text and background color can be difficult for the users to read. The best among these three in terms of accessibility is TU Dublin with ARIA number of 596. (ARIA is a W3C specification that stands for “Accessible Rich Internet Applications.” It consists of markup that can be added to HTML in order to communicate the roles, states, and properties of user interface elements to assistive technologies (AT).[Washington Education](<https://www.washington.edu/accessibility/checklist/aria/#:~:text=ARIA%20is%20a%20W3C%20specification,to%20assistive%20technologies%20(AT).>))
+
+- In terms of Structural HTML elements, W3 Schools take the lead. A few structural HTML elements are `main`, `header`, `footer`, `aside` and `section`. Having structural elements in HTML have two big benefits:
+  - Search engines could now interpret the pages more intuitively.
+  - It makes pages more accessible to people with disabilities such as hearing or visual impairment.
+
+Reference:
+Anon, (n.d.). HTML5 Structural Elements | Intro to Web Design. [online] Available at: [Berkely College](http://berkeleycollege.me/itw/lesson/html5-structural-elements/#:~:text=The%20new%20elements%20standardized%20this) [Accessed 27 Feb. 2023].
+
+‌
